@@ -11,7 +11,7 @@ class DragAndDropTwoRCVActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drag_and_drop_menu)
-        addFragment(MainMenuFragment2rcvV2.newInstance(), false)
+        addFragment(MainMenuFragment2rcv.newInstance(), false)
     }
 
     fun addFragment(fragment: Fragment, isAdd: Boolean) {
