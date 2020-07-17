@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/bgHuman"
+             tools:context=".Elevator.HomeElevatorFragment">
+
+    <LinearLayout
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_top"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:text="Top"/>
+
+        <TextView
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_lift"/>
+
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_bottom"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:text="Bottom "/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/bgHuman"
+            android:id="@+id/rcv_elevator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>
